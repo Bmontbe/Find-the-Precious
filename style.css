@@ -1,5 +1,42 @@
+@font-face {
+  font-family: 'aniron';
+  src: url('police/aniron/anicb___.ttf');
+  src: url('police/aniron/anicm___.ttf'),
+       url('police/aniron/anirb___.ttf'),
+       url('police/aniron/anirm___.ttf');
+}
 
-/*image Gandalf*/
+/*Body*/
+body{
+  font-family: aniron, arial;
+}
+
+/*Navbar*/
+.bg-orange{
+  background-color: orangered;
+}
+#navbarText a{
+color:white;
+}
+
+/*Carousel*/
+.carousel-item {
+	max-height: 70vh;
+}
+
+.carousel-item img {
+	background-size: cover ;
+}
+
+/*section*/
+section .fondgris {
+  background-image: url("integration/bg_light.png");
+}
+
+section .fondnoir {
+  background-image: url("integration/bg_dark.png");
+  color:white;
+}
 
 /*Bloc Reward Coins*/
 #rewardcoins {
