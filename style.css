@@ -37,7 +37,19 @@ section .fondnoir {
   background-image: url("integration/bg_dark.png");
   color:white;
 }
-
+/*About the ring*/
+th{
+  background-color:orangered;
+  color:black;
+}
+thead { 
+  border:1px solid black;
+  background:grey;
+  }
+td { 
+  border:1px solid black;
+  color:black;
+  }
 /*Bloc Reward Coins*/
 #rewardcoins {
   box-sizing: content-box;
@@ -94,13 +106,6 @@ section .fondnoir {
   bottom: 130px;
 }
 
-thead { 
-  border:1px solid black;
-  background:grey;
-  }
-td { 
-  border:1px solid black;
-  }
 
 h6{
   text-align: right;
