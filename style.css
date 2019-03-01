@@ -5,18 +5,45 @@
        url('police/aniron/anirb___.ttf'),
        url('police/aniron/anirm___.ttf');
 }
+@font-face{
+  font-family:"tengwar annatar";
+  src: url('police/Tengwar Annatar Font/tngan.ttf');
+  src: url('police/Tengwar Annatar Font/tnganb.ttf'),
+       url('police/Tengwar Annatar Font/tnganbi.ttf'),
+       url('police/Tengwar Annatar Font/tngani.ttf');
+}
+@font-face{
+  font-family:"party business";
+  src: url('police/Party Business/partybusiness.ttf');
+}
 
 /*Body*/
 body{
+  font-family: party business, arial;
+}
+
+h1, h2{
   font-family: aniron, arial;
+}
+
+span{
+  font-family: tengwar annatar, arial;
+  color:orange;
+}
+
+h5{
+  font-size: 2em;
+  font-weight: bold;
 }
 
 /*Navbar*/
 .bg-orange{
-  background-color: orangered;
+  background-color: orange;
 }
 #navbarText a{
 color:white;
+font-size: 1.5em;
+font-weight: bold;
 }
 
 /*Carousel*/
@@ -37,6 +64,31 @@ section .fondnoir {
   background-image: url("integration/bg_dark.png");
   color:white;
 }
+
+/*fellows*/
+
+.bg-noir{
+  background-color: black;
+}
+.policenoir{
+  color: black;
+  font-family:aniron;
+}
+.nav-pills>li>a:hover {
+  text-decoration: underline;
+  color:orange;
+}
+
+.selecteur a:hover::before{
+  content: "b";
+  font-family: tengwar annatar;
+}
+
+.selecteur a:hover::after{
+  content: "b";
+  font-family: tengwar annatar;
+}
+
 /*About the ring*/
 th{
   background-color:orangered;
@@ -56,9 +108,26 @@ td {
   box-shadow: 10px 10px 30px grey;
   opacity: 0.8;
   width: 80%;
-  font-size: 20px;
+  font-size: 12px;
   color: black;
-  font-family: Arial;
+  font-family: aniron, 'Arial Narrow Bold', sans-serif;
+  text-align:center;
+  line-height:1em;
+  border-radius:25px;
+  margin-left:8px;
+  padding-bottom:10%;
+  padding-top:20px;
+  position:absolute;
+  left: 18px;
+  top: 40px;
+  background:white;
+}
+
+#gimli {
+  width: 80%;
+  font-size: 16px;
+  color: orange;
+  font-family: aniron, 'Arial Narrow Bold', sans-serif;
   text-align:center;
   line-height:1em;
   border-radius:25px;
@@ -68,9 +137,7 @@ td {
   position:absolute;
   left: 18px;
   top: 40px;
-  background:white;
 }
-
 .coins{
   color:#FFA500;
   font-weight:bold;
@@ -80,32 +147,55 @@ td {
 .gandalf {
   box-sizing: content-box;
   width: 80%;
-  font-size: 30px;
+  font-size: 20px;
   font-weight:bold;
   color: white;
-  font-family: Arial;
+  font-family: aniron, 'Arial Narrow Bold', sans-serif;
   text-align:center;
   line-height:1em;
   border-radius:25px;
   margin-left:8px;
   position:absolute;
   left: 18px;
-  bottom: 180px;
+  bottom: 200px;
 }
 
+.gimli {
+  box-sizing: content-box;
+  width: 80%;
+  font-size: 20px;
+  text-decoration: line-through orange;
+  font-weight:bold;
+  color: white;
+  font-family: aniron, 'Arial Narrow Bold', sans-serif;
+  text-align:center;
+  line-height:1em;
+  border-radius:25px;
+  margin-left:8px;
+  position:absolute;
+  left: 18px;
+  bottom: 200px;
+}
 /*Image au survol de la souris*/
 .card:hover #image{
   opacity: 1;
 }
-.card:hover #rewardcoins{
+.card:hover #rewardcoins {
+  visibility:hidden;
+}
+.card:hover #gimli {
   visibility:hidden;
 }
 .card:hover .gandalf{
   color:white;
   font-size: 20px;
-  bottom: 130px;
+  bottom: 180px;
 }
-
+.card:hover .gimli{
+  color:white;
+  font-size: 20px;
+  bottom: 180px;
+}
 
 h6{
   text-align: right;
