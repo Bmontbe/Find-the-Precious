@@ -36,6 +36,10 @@ h5{
   font-weight: bold;
 }
 
+.btn{
+  float: ;
+}
+
 /*Navbar*/
 .bg-orange{
   background-color: orange;
@@ -102,8 +106,12 @@ td {
   border:1px solid black;
   color:black;
   }
-/*Bloc Reward Coins*/
-#rewardcoins {
+
+.portrait {
+    opacity:0.5;
+  }
+  /*Bloc Reward Coins*/
+.bandeau {
   box-sizing: content-box;
   box-shadow: 10px 10px 30px grey;
   opacity: 0.8;
@@ -125,7 +133,8 @@ td {
 
 #gimli {
   width: 80%;
-  font-size: 16px;
+  font-size: 2em;
+  font-weight: bold;
   color: orange;
   font-family: aniron, 'Arial Narrow Bold', sans-serif;
   text-align:center;
@@ -144,7 +153,7 @@ td {
 }
 
 /*Bloc texte Gandalf*/
-.gandalf {
+.nom {
   box-sizing: content-box;
   width: 80%;
   font-size: 20px;
@@ -177,7 +186,7 @@ td {
   bottom: 200px;
 }
 /*Image au survol de la souris*/
-.card:hover #image{
+.portrait:hover{
   opacity: 1;
 }
 .card:hover #rewardcoins {
